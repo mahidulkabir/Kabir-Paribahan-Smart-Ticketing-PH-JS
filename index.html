@@ -13,6 +13,10 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fontawesome cdn  -->
+    <script src="https://kit.fontawesome.com/80fe2512d1.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <header class="container mx-auto">
@@ -192,17 +196,17 @@
             <div class="bg-[#F7F8F8] p-8 rounded-lg my-4 space-y-5">
               <!-- bottom container  -->
               <div>
-                <div class="font-raleway text-xl font-semibold flex justify-between ">
+                <div class="font-raleway text-xl font-semibold flex flex-col md:flex-row justify-between ">
                   <p class="text-[#03071299]">Route</p>
                   <p class="text-[#030712]">Dhaka - Lakshmipur</p>
                 </div>
                 <hr class="border-t-2 border-dashed border-gray-400 my-4" />
-                <div class="font-raleway text-xl font-semibold flex justify-between ">
+                <div class="font-raleway text-xl font-semibold flex justify-between flex-col md:flex-row">
                   <p class="text-[#03071299]">Departure Time</p>
                   <p class="text-[#030712]">9.00 PM</p>
                 </div>
                 <hr class="border-t-2 border-dashed border-gray-400 my-4" />
-                <div class="flex justify-evenly mt-5">
+                <div class="flex flex-col md:flex-row justify-evenly mt-5">
                   <button class="btn text-[#030712CC]">Boarding Point - Laxmipur </button>
                   <button class="btn text-[#030712CC]">Dropping Point - Mirpur, Dhaka </button>
                   <button class="btn text-[#030712CC]">Est. Time - 4 Hour </button>
@@ -242,8 +246,14 @@
               <div class="flex gap-2">
                 <img src="./images/seat-green-filled.png" alt="seat gray">
                 <p>Selected</p>
+                
               </div>
             </div>
+            <hr >
+            <!-- main seat plan part  -->
+             <div class="p-4 float-right">
+              <img src="./images/steering-wheel.png" alt="" class="w-16 bg-[#0307121A] px-5 py-2 rounded-lg">
+             </div>
            </div>
            <!-- data entry part -->
            <div class=" border to-blue-700 w-2/5">
