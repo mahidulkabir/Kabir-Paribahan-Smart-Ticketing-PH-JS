@@ -4,14 +4,21 @@ function seatButtonPressed(className){
     for(let i =0; i < element.length ; i++){
         element[i].addEventListener('click',function(){
               this.classList.toggle('bg-green-400');
-              this.classList.toggle('text-white')
+              this.classList.toggle('text-white');
+
               if (this.classList.contains('bg-green-400')) {
                 availableSeat --;
               }
               else{
                 availableSeat ++ ;
               }
-              document.getElementById('remainingSeat').innerHTML= availableSeat;
+              document.getElementById('remainingSeat').innerHTML= availableSeat; 
+
+              let seatName = this.innerHTML;
+              let seatPrice = parseInt(document.getElementById('ticket-price').innerHTML);
+              
+              let seatClass= (document.getElementById('seat-class').innerHTML);
+              
         });
     
     
